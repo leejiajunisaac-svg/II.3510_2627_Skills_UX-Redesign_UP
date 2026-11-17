@@ -1,5 +1,21 @@
 package com.example.swapcampus_isaaclee.ui.screens
 
+// TODO [Task 2 - Bilingual FR/EN Toggle & Euro Formatting]:
+// 1. Add `var activeLang by remember { mutableStateOf("en") }`
+// 2. Add a clickable header pill ("FR" / "EN") with >= 48.dp touch target to toggle language live
+// 3. Format prices via `formatPrice(price, activeLang)` -> "€25.00" (EN) or "25,00 €" (FR)
+
+// TODO [Task 3 - 2-Column Storefront Grid & Micro-Interactions]:
+// 1. Replace single-column `LazyColumn` with `LazyVerticalGrid(columns = GridCells.Fixed(2))`
+// 2. Add a 1:1 media container (`aspectRatio(1f)`) using Coil 3 `AsyncImage` + offline vector fallback
+// 3. Add spring press scale animation (`animateFloatAsState` -> 0.97f) and animated status badges
+
+// TODO [Task 4 - One-Handed Ergonomic Thumb Dock & Accessibility X-Ray]:
+// 1. Relocate Search bar and Category `FilterChip` row from the top bar into `Scaffold(bottomBar = { ... })`
+// 2. Anchor the `+ Sell` / `+ Vendre` ExtendedFloatingActionButton in the bottom-right thumb zone
+// 3. Add a top-right Accessibility X-Ray toggle to audit >= 48x48.dp touch targets & thumb reachability arc
+
+
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
